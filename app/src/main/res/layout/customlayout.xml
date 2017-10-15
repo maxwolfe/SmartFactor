@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/delete"
+        android:id="@+id/delete"
+        android:adjustViewBounds="false"
+        android:layout_alignRight="@+id/token"
+        android:visibility="invisible"
+        android:layout_above="@+id/username" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/company"
+        android:textSize="22sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company"
+        android:layout_alignLeft="@+id/company"
+        android:layout_alignStart="@+id/company"
+        android:layout_marginTop="18dp"
+        android:id="@+id/token"
+        android:textSize="48sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/token"
+        android:layout_alignLeft="@+id/token"
+        android:layout_alignStart="@+id/token"
+        android:layout_marginTop="26dp"
+        android:id="@+id/username"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:id="@+id/timer"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
