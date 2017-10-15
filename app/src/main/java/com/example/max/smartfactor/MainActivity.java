@@ -200,10 +200,7 @@ public class MainActivity extends AppCompatActivity implements AsyncDelegate {
         try {
         Bitmap myQRCode = BitmapFactory.decodeResource(getResources(),R.drawable.qr
         );}catch(Exception e){e.printStackTrace();}
-        BarcodeDetector barcodeDetector =
-                new BarcodeDetector.Builder(this)
-                        .setBarcodeFormats(Barcode.QR_CODE)
-                        .build();
+    
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
         try{execute();}catch(Exception e){e.printStackTrace();}
 
