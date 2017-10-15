@@ -48,7 +48,8 @@
         android:layout_alignStart="@+id/token"
         android:layout_marginTop="26dp"
         android:id="@+id/username"
-        android:textSize="16sp" />
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleSmall"
